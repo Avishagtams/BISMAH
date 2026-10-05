@@ -1,0 +1,289 @@
+<!-- <!-- <!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+</head>
+<body>
+
+    <h1>Hello Worlddd</h1>
+    <main>
+        <h2>My experience</h2>
+        <ul>
+            <li>teacher at analiza</li>
+        </ul>
+    </main>
+
+</body>
+</html>
+ -->
+ <!-- <!DOCTYPE html>
+ <html>
+ <head>
+     <title>My CV</title>
+ </head>
+ <body>
+ 
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bkelBGnIPcPW5_rIvYev8qB1G4CrlDrblZuXTEg4KA&s=10" width="250" height="250" alt="Profile Picture">
+ 
+     <h1>Avishag Tamssut</h1>
+ 
+     <h3>Port5500</h3>
+ 
+     <p>web developer</p>
+ 
+ </body>
+ </html> -->
+
+ <!-- <!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>פרטים אישיים</title>
+</head>
+<body>
+    <h1>פרטים אישיים</h1>
+    <ul>
+        <li><strong>שם:</strong> אבישג</li>
+        <li><strong>גיל:</strong> 22</li>
+        <li><strong>כתובת:</strong> אשדוד, ישראל</li>
+    </ul>
+
+    <br>
+    <a href="about.html">NEXT</a>
+</body>
+</html>  
+
+
+
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Inputs Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      direction: ltr; /* לפי התמונה הטופס משמאל לימין */
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    fieldset {
+      border: 1px solid #aaa;
+      margin-bottom: 15px;
+      padding: 10px 15px;
+    }
+
+    legend {
+      padding: 0 5px;
+      font-weight: normal;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    label {
+      min-width: 80px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    select {
+      padding: 3px;
+      border: 1px solid #767676;
+      border-radius: 2px;
+    }
+
+    /* הודעות שגיאה עיצוביות */
+    .error-msg {
+      color: red;
+      font-size: 0.85em;
+      display: none;
+    }
+
+    input:invalid:touched {
+      border-color: red;
+    }
+
+    button[type="submit"], input[type="submit"] {
+      padding: 3px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Form Inputs Examples</h1>
+
+  <form id="exampleForm" action="#" method="POST" novalidate>
+    
+    <!-- Text inputs -->
+    <!DOCTYPE html>
+    <html lang="he">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Text Inputs Validation Example</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          direction: ltr; /* שמירה על המראה כמו בתמונה */
+        }
+    
+        fieldset {
+          border: 1px solid #aaa;
+          margin-bottom: 15px;
+          padding: 15px;
+          max-width: 400px;
+        }
+    
+        legend {
+          padding: 0 5px;
+        }
+    
+        .form-group {
+          margin-bottom: 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+    
+        .input-row {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+    
+        label {
+          min-width: 80px;
+        }
+    
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+          padding: 5px;
+          border: 1px solid #767676;
+          border-radius: 3px;
+          width: 200px;
+        }
+    
+        /* הודעות שגיאה */
+        .error-msg {
+          color: red;
+          font-size: 0.8em;
+          display: none;
+          margin-left: 90px;
+        }
+    
+        button {
+          margin-top: 10px;
+          padding: 5px 15px;
+          cursor: pointer;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <h1>Form Inputs Examples</h1>
+    
+      <form id="textInputsForm" action="#" method="POST" novalidate>
+        
+        <!-- Text inputs -->
+        <fieldset>
+          <legend>Text inputs</legend>
+          
+          <!-- Text Field -->
+          <div class="form-group">
+            <div class="input-row">
+              <label for="text">Text</label>
+              <input type="text" id="text" name="text" value="" placeholder="Enter text">
+            </div>
+            <span class="error-msg" id="text-error">Please enter at least 2 characters.</span>
+          </div>
+    
+          <!-- Password Field -->
+          <div class="form-group">
+            <div class="input-row">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" value="" placeholder="Enter password">
+            </div>
+            <span class="error-msg" id="password-error">Password must be at least 6 characters.</span>
+          </div>
+    
+          <!-- Email Field -->
+          <div class="form-group">
+            <div class="input-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" value="" placeholder="Enter email">
+            </div>
+            <span class="error-msg" id="email-error">Please enter a valid email address (e.g. name@example.com).</span>
+          </div>
+    
+        </fieldset>
+    
+        <button type="submit">Submit</button>
+      </form>
+    
+      <!-- JavaScript Validation -->
+      <script>
+        const form = document.getElementById('textInputsForm');
+    
+        form.addEventListener('submit', function (event) {
+          let isValid = true;
+    
+          // 1. Validation for Text input (min 2 characters)
+          const textInput = document.getElementById('text');
+          const textError = document.getElementById('text-error');
+          if (textInput.value.trim().length < 2) {
+            textError.style.display = 'block';
+            isValid = false;
+          } else {
+            textError.style.display = 'none';
+          }
+    
+          // 2. Validation for Password input (min 6 characters)
+          const passwordInput = document.getElementById('password');
+          const passwordError = document.getElementById('password-error');
+          if (passwordInput.value.length < 6) {
+            passwordError.style.display = 'block';
+            isValid = false;
+          } else {
+            passwordError.style.display = 'none';
+          }
+    
+          // 3. Validation for Email input (valid email regex)
+          const emailInput = document.getElementById('email');
+          const emailError = document.getElementById('email-error');
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+          if (!emailPattern.test(emailInput.value.trim())) {
+            emailError.style.display = 'block';
+            isValid = false;
+          } else {
+            emailError.style.display = 'none';
+          }
+    
+          // Stop form submission if invalid
+          if (!isValid) {
+            event.preventDefault();
+          } else {
+            alert('Form submitted successfully!');
+          }
+        });
+      </script>
+    
+    </body>
+    </html>

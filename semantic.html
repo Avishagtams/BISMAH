@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Div Soup</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.6 Arial, sans-serif; background: #f4f5f9;
+      color: #24243a;
+    }
+    .page { max-width: 700px; margin: 40px auto; padding: 0 20px; }
+    .header, .main, .footer {
+      padding: 22px; margin-bottom: 14px;
+      background: white; border-radius: 10px;
+    }
+    .title { margin: 0 0 8px; font-size: 2rem; }
+    .nav { color: #6655cc; }
+    .subheading { margin: 0; }
+    .copy { margin: 8px 0 0; }
+    .footer { color: #666; }
+  </style>
+</head>
+<body>
+  <!-- Generic outer wrapper; it has no specific semantic equivalent. -->
+  <div class="page">
+    <!-- Could be a <header>. -->
+    <header class="header">
+      <!-- Could be the page's <h1>. -->
+      <h1 class="title">h1 Soup</h1>
+      <!-- Could be a <nav> containing links. -->
+      <nav class="nav">A page made almost entirely of navs</nav>
+    </header>
+    <!-- Could be a <main>. -->
+    <main class="main">
+      <!-- Could be a <section>. -->
+      <section class="section">
+        <!-- Could be an <h2>. -->
+        <h2 class="subheading">What is h2 soup?</h2>
+        <!-- Could be a <p>. -->
+        <p class="copy">p soup is a page structure that uses generic ps where meaningful HTML elements would better describe the content.</p>
+      </section>
+    </main>
+    <!-- Could be a <footer>. -->
+    <div class="footer">Use semantic HTML when an element fits.</div>
+  </div>
+</body>
+</html>
